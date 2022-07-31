@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/jquery.datetimepicker.css" />
+    <script src="script/jquery.datetimepicker.full.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Хобби Арт</title>
+</head>
+
+<body>
+    <div class="wraper">
+
+        <!-- to top button -->
+        <div class="scrollup">
+            <i class="fa fa-chevron-up"></i>
+        </div>
+        
+        <header>
+            <div class="container">
+                <!-- headr contact -->
+                <div class="contact">
+                    <div class="contact-tel"><a href="tel:+79161234567">+7 916 123 45 67</a></div>
+                    <div class="map">
+                        <p>г. Москва, Красная площадь, д. 3, ТЦ ГУМ</p>
+                        <div class="map_active">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A02f424aadba21c93012746b5e1e4023c38959cf8f46565fa1e048c9eaa19129b&amp;source=constructor"
+                                width="600" height="400" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="contact-working_hours">Ежедневно с 10:00 до 19:00</div>
+                </div>
+
+                <section class="menu">
+                    <nav class="main-nav">
+                        <div class="nav-menu">
+                            <ul class="nav-menu_list">
+                                <li class="nav-menu_link"><a href="catalogue.html">Каталог</a></li>
+                                <li class="nav-menu_link"><a href="delivery.html">Оплата и доставка</a></li>
+                                <li class="nav-menu_link"><a href="company.html">О компании</a></li>
+                                <li class="nav-menu_link"><a href="company.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-logo">
+                            <a href="index.html"><img src="./svg/nav_logo.svg" alt="nav-logo"></a>
+                        </div>
+                        <div class="nav-acc">
+                            <div class="nav-account button js-button-campaign"><a href="#">Войти</a>
+                            </div>
+
+                            <div class="overlay js-overlay-campaign">
+                                <div class="popup js-popup-campaign">
+                                    <h2>Войти в личный кабинет</h2>
+                                    <form action="" id="acc_form">
+                                        <ul>
+                                            <li><input class="acc_email" type="email" name="user_email" form="acc_form"
+                                                    placeholder="Email" required>
+                                            </li>
+                                            <li>
+                                                <input id="acc_assword" type="password" autocomplete="current-password"
+                                                    form="acc_form" name="user_password" placeholder="Пароль">
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="remember" name="remember"
+                                                    value="запомнить меня">
+                                                <label for="remember">запомнить меня</label>
+                                            </li>
+                                            <li><a class="acc_button" href="account.html">Войти</a></li>
+                                            <li><button class="acc_button" type="submit" form="acc_form"
+                                                    value="forgot_psw">Забыли пароль?</button></li>
+                                            <div class="js-button-campaign">
+                                                <ul>
+                                                    <li>
+                                                        <p>Вы еще не зарегистрированы?</p>
+                                                    </li>
+                                                    <li>
+                                                        <div class="js-button-reg"><a
+                                                                class="acc_reg_link">Регистрация</a> </div>
+                                                        <div class="overlay-reg js-overlay-reg">
+                                                            <div class="popup-reg js-popup-campaign-reg">
+                                                                <form action="" id="reg_form">
+                                                                    <h2>регистрация</h2>
+                                                                    <div class="reg_flex">
+
+                                                                        <ul class="reg_list">
+                                                                            <li><input type="text" form="reg_form"
+                                                                                    name="user_name" placeholder="Имя"
+                                                                                    required></li>
+                                                                            <li><input type="text" form="reg_form"
+                                                                                    name="user_surename"
+                                                                                    placeholder="Фамилия" required></li>
+                                                                            <li> <input type="text" form="reg_form"
+                                                                                    name="user_fathername"
+                                                                                    placeholder="Отчество"></li>
+                                                                            <li><input type="number" form="reg_form"
+                                                                                    name="user_phone"
+                                                                                    placeholder="Телефон" required></li>
+                                                                        </ul>
+
+                                                                        <ul class="reg_list">
+                                                                            <li><input class="reg_email" type="email"
+                                                                                    name="user_email" form="reg_form"
+                                                                                    placeholder="Email" required></li>
+                                                                            <li> <input type="text" form="reg_form"
+                                                                                    name="adrres" placeholder="Адрес">
+                                                                            </li>
+                                                                            <li><input id="reg_password" type="password"
+                                                                                    autocomplete="current-password"
+                                                                                    form="user_form"
+                                                                                    name="user_password"
+                                                                                    placeholder="Придумайте пароль">
+                                                                            </li>
+                                                                            <li><input id="userPassword" type="password"
+                                                                                    autocomplete="current-password"
+                                                                                    form="user_form"
+                                                                                    name="confirm_password"
+                                                                                    placeholder="Повторите пароль"></li>
+                                                                        </ul>
+
+                                                                    </div>
+                                                                    <button class="reg_button" type="submit"
+                                                                        name="save_reg"
+                                                                        form="reg_form">зарегистрироваться</button>
+                                                                </form>
+                                                                <div class="close-popup-reg js-close-campaign-reg">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </ul>
+                                    </form>
+                                    <div class="close-popup js-close-campaign"></div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="nav-basket"><a href="basket.html">Корзина</a></div>
+                        </div>
+                    </nav>
+                </section>
+            </div>
+        </header>
+
+        <!-- Main -->
+
+        <main>
+            <div class="container">
+                <!-- advertisement -->
+
+                <ul id="breadcrumbs">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="basket.html" class="current">Корзина</a>
+                    </li>
+                </ul>
+
+                <div class="basket_flex">
+
+                    <div class="basket_form">
+                        <h2>Способ получения</h2>
+                        <p><input class="user_city" type="text" form="basket_form" name="user_city" placeholder="Город"
+                                required></p>
+                        <form>
+                            <ul class="send_choose">
+                                <li> <input type="radio" form="basket_form" name="send" value="pochta" id="pochta"
+                                        checked> </li>
+                                <label for="pochta">Почта России</label>
+                                <li> <input type="radio" form="basket_form" name="send" value="sdek" id="sdek"> </li>
+                                <label for="sdek">СДЭК</label>
+                                <li> <input type="radio" form="basket_form" name="send" value="dhl" id="dhl"> </li>
+                                <label for="dhl">DHL</label>
+                                <li> <input type="radio" form="basket_form" name="send" value="ems" id="ems"> </li>
+                                <label for="ems">EMS</label>
+                            </ul>
+                            <ul class="basket_list">
+                                <li><input class="user_street" type="text" form="basket_form" name="user_street"
+                                        placeholder="Улица" required></li>
+                                <li><input class="user_building" type="text" form="basket_form" name="user_building"
+                                        placeholder="Дом" required></li>
+                                <li> <input class="user_flat" type="text" form="basket_form" name="user_flat"
+                                        placeholder="Квартира"></li>
+                            </ul>
+                            <p><textarea name="comments" id="" placeholder="Добавить комментарий"
+                                    form="basket_form"></textarea></p>
+                            <p><input class="user_date" type="text" value="" id="datetimepicker" name="datetimepicker"
+                                    placeholder="Выберите дату и время" form="basket_form"></p>
+
+                            <h2>Данные получателя</h2>
+
+                            <ul class="basket_list">
+                                <li><input class="user_surename" type="text" form="basket_form" name="user_surename"
+                                        placeholder="Фамилия" required></li>
+                                <li><input class="user_name" type="text" form="basket_form" name="user_name"
+                                        placeholder="Имя" required></li>
+                                <li> <input class="user_fathername" type="text" form="basket_form"
+                                        name="user_fathername" placeholder="Отчество"></li>
+                            </ul>
+                            <input class="phone baske_phone" type="text" id="phone" name="phone_number"
+                                form="basket_form" placeholder="Номер телефона" required>
+                            <p class="basket_text">по этому номеру телефона мы с вяжемся с вами для подтверждения заказа
+                            </p>
+                            <input type="email" name="email_mailing" form="basket_form" placeholder="Ваш Email"
+                                required>
+                            <p class="basket_text">на эту почту вам придет письмо с составом заказа, а так же трэк-номер
+                                для его отслеживания</p>
+                            <input class="basket_check" type="checkbox" form="basket_form" value="mailing_approved">
+                            <p class="checkbox_text">* Подписаться на рассылку новинок и акций</p>
+                        </form>
+                    </div>
+
+                    <div class="order">
+                        <h2>Состав заказа</h2>
+
+                        <table class="table_basket">
+                            <tr>
+                                <th><img src="img/order/01.png" alt=""></th>
+                                <th>Шпагат Macrametr <br>4 мм, 100 нитей</th>
+                                <td>
+                                    <form class="order_form" action="" id="card_basket">
+                                        <input class="number" type="number" min="1" max="999" id="Col" value="1"
+                                            name="Col">
+                                        <button class="button_plus" id="btnPlus" type="button"
+                                            form="card_basket">+</button>
+                                        <button class="button_minus" id="btnMinus" type="button"
+                                            form="card_basket">-</button>
+                                    </form>
+                                </td>
+
+                                <td><button class="thrash" id="clearbtn"><i class="fa fa-trash"
+                                            aria-hidden="true"></i></button></td>
+                            </tr>
+                        </table>
+
+                        <div class="order_accept">
+                            <h2>Промокод</h2>
+                            <form action="" method="post" id="order_accept">
+
+                                <ul class="basket_list">
+                                    <li><input class="promo" type="text" form="order_accept" name="promo"
+                                            placeholder="Промокод"></li>
+                                    <li><button type="submit" value="promo_accept"
+                                            form="order_accept">активировать</button></li>
+                                </ul>
+                            </form>
+                            <p class="basket_text">У вас есть промокод? Активируйте его</p>
+                            <p class="order_text">Доступно для списания: <span>25 бонусов</span></p>
+
+                            <ul>
+                                <li><button class="order_button" type="submit" form="basket_form"
+                                        value="order_accept">оформить заказ</button></li>
+                                <li>
+                                    <span id="primaryTotal">
+                                        <table>
+                                            <tr>
+                                                <td class="price" data-price="332"></td>
+                                                <td>&#8381;</td>
+                                            </tr>
+                                        </table>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer_flex">
+                    <p class="footer_text">ХОББИ <br>АРТ</p>
+                    <div class="footer_contact">
+                        <img src="./img/footer/logo.png" alt="logo">
+                        <ul class="footer_list">
+                            <li class="footer_tel"><a href="tel:+79161234567">+7 916 123 45 67</a></li>
+                            <li class="footer_adress"><a href="https://yandex.ru/maps/-/CCUJZBB3GC" target="_blank">г.
+                                    Москва, Красная площадь, д. 3, ТЦ ГУМ</a></li>
+                            <li class="footer_time">Ежедневно с 10:00 до 19:00</li>
+                            <li class="footer_insta"><a href="https://instanavigation.com/ru/profile/hobbyart_dv"
+                                    target="_blank">@hobbyart_dv</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="catalogue.html">Каталог</a></li>
+                            <li><a href="index.html#new">Новинки</a></li>
+                            <li><a href="index.html#advantages">Преимущества</a></li>
+                            <li><a href="waranty.html">Гарантия и возврат</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="delivery.html">Оплата и доставка</a></li>
+                            <li><a href="company.html">Контакты</a></li>
+                            <li><a href="account.html">Личный кабинет</a></li>
+                            <li><a href="bonus.html">Бонусная программа</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_mailing">
+                        <p>Узнавайте первым о новинках и новостях</p>
+                        <form action="" method="get" id="mailing">
+                            <input class="e" type="email" name="email_mailing" form="mailing" placeholder="Ваш Email">
+                            <button class="footer_button" type="submit" form="mailing"
+                                value="aprove">подписаться</button>
+                            <p class="footer_mailing_attention">* нажимая на кнопку, вы соглашаетесь с политикой
+                                конфиденциальности</p>
+                            <p class="footer_mailing_copyright">© 2012-2022 ХОББИ АРТ — официальный интернет-магазин
+                                товаров для хобби. Все права защищены. Условия использования и политика
+                                конфиденциальности</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- calendar -->
+    <script>
+        $.datetimepicker.setLocale('ru');
+        $('#datetimepicker').datetimepicker({
+            dayOfWeekStart: 1,
+            lang: 'ru',
+            format: 'd M Y H:i',
+            disabledDates: ['2016/09/21', '2016/09/29'],
+            startDate: 0,
+            step: 30,
+            minDate: 0,
+            allowTimes: ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00',
+                '18:00', '19:00', '20:00', '21:00'
+            ],
+            disabledWeekDays: [0, 6]
+        });
+    </script>
+    <script src="script/account_popup.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

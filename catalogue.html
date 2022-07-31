@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/jquery.datetimepicker.css" />
+    <script src="script/jquery.datetimepicker.full.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Хобби Арт</title>
+</head>
+
+<body>
+    <div class="wraper">
+
+        <!-- to top button -->
+        <div class="scrollup">
+            <i class="fa fa-chevron-up"></i>
+        </div>
+        
+        <header>
+            <div class="container">
+                <!-- headr contact -->
+                <div class="contact">
+                    <div class="contact-tel"><a href="tel:+79161234567">+7 916 123 45 67</a></div>
+                    <div class="map">
+                        <p>г. Москва, Красная площадь, д. 3, ТЦ ГУМ</p>
+                        <div class="map_active">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A02f424aadba21c93012746b5e1e4023c38959cf8f46565fa1e048c9eaa19129b&amp;source=constructor"
+                                width="600" height="400" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="contact-working_hours">Ежедневно с 10:00 до 19:00</div>
+                </div>
+
+                <section class="menu">
+                    <nav class="main-nav">
+                        <div class="nav-menu">
+                            <ul class="nav-menu_list">
+                                <li class="nav-menu_link"><a href="catalogue.html">Каталог</a></li>
+                                <li class="nav-menu_link"><a href="delivery.html">Оплата и доставка</a></li>
+                                <li class="nav-menu_link"><a href="company.html">О компании</a></li>
+                                <li class="nav-menu_link"><a href="company.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-logo">
+                            <a href="index.html"><img src="./svg/nav_logo.svg" alt="nav-logo"></a>
+                        </div>
+                        <div class="nav-acc">
+                            <div class="nav-account button js-button-campaign"><a href="#">Войти</a>
+                            </div>
+
+                            <div class="overlay js-overlay-campaign">
+                                <div class="popup js-popup-campaign">
+                                    <h2>Войти в личный кабинет</h2>
+                                    <form action="" id="acc_form">
+                                        <ul>
+                                            <li><input class="acc_email" type="email" name="user_email" form="acc_form"
+                                                    placeholder="Email" required>
+                                            </li>
+                                            <li>
+                                                <input id="acc_assword" type="password" autocomplete="current-password"
+                                                    form="acc_form" name="user_password" placeholder="Пароль">
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="remember" name="remember"
+                                                    value="запомнить меня">
+                                                <label for="remember">запомнить меня</label>
+                                            </li>
+                                            <li><a class="acc_button" href="account.html">Войти</a></li>
+                                            <li><button class="acc_button" type="submit" form="acc_form"
+                                                    value="forgot_psw">Забыли пароль?</button></li>
+                                            <div class="js-button-campaign">
+                                                <ul>
+                                                    <li>
+                                                        <p>Вы еще не зарегистрированы?</p>
+                                                    </li>
+                                                    <li>
+                                                        <div class="js-button-reg"><a
+                                                                class="acc_reg_link">Регистрация</a> </div>
+                                                        <div class="overlay-reg js-overlay-reg">
+                                                            <div class="popup-reg js-popup-campaign-reg">
+                                                                <form action="" id="reg_form">
+                                                                    <h2>регистрация</h2>
+                                                                    <div class="reg_flex">
+
+                                                                        <ul class="reg_list">
+                                                                            <li><input type="text" form="reg_form"
+                                                                                    name="user_name" placeholder="Имя"
+                                                                                    required></li>
+                                                                            <li><input type="text" form="reg_form"
+                                                                                    name="user_surename"
+                                                                                    placeholder="Фамилия" required></li>
+                                                                            <li> <input type="text" form="reg_form"
+                                                                                    name="user_fathername"
+                                                                                    placeholder="Отчество"></li>
+                                                                            <li><input type="number" form="reg_form"
+                                                                                    name="user_phone"
+                                                                                    placeholder="Телефон" required></li>
+                                                                        </ul>
+
+                                                                        <ul class="reg_list">
+                                                                            <li><input class="reg_email" type="email"
+                                                                                    name="user_email" form="reg_form"
+                                                                                    placeholder="Email" required></li>
+                                                                            <li> <input type="text" form="reg_form"
+                                                                                    name="adrres" placeholder="Адрес">
+                                                                            </li>
+                                                                            <li><input id="reg_password" type="password"
+                                                                                    autocomplete="current-password"
+                                                                                    form="user_form"
+                                                                                    name="user_password"
+                                                                                    placeholder="Придумайте пароль">
+                                                                            </li>
+                                                                            <li><input id="userPassword" type="password"
+                                                                                    autocomplete="current-password"
+                                                                                    form="user_form"
+                                                                                    name="confirm_password"
+                                                                                    placeholder="Повторите пароль"></li>
+                                                                        </ul>
+
+                                                                    </div>
+                                                                    <button class="reg_button" type="submit"
+                                                                        name="save_reg"
+                                                                        form="reg_form">зарегистрироваться</button>
+                                                                </form>
+                                                                <div class="close-popup-reg js-close-campaign-reg">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </ul>
+                                    </form>
+                                    <div class="close-popup js-close-campaign"></div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="nav-basket"><a href="basket.html">Корзина</a></div>
+                        </div>
+                    </nav>
+                </section>
+            </div>
+        </header>
+
+        <!-- Main -->
+
+        <main>
+            <div class="container">
+                <!-- advertisement -->
+
+                <ul id="breadcrumbs">
+                    <li><a href="index.html">Главная</a></li>
+                    <ul><a href="catalogue.html" class="current">Каталог</a>
+                    </ul>
+                </ul>
+
+                <div class="catalogue_flex">
+                    <div>
+                        <form action="" id="catalogue">
+                            <div>
+                                <p class="title_p">Тип изделий</p>
+                                <ul>
+                                    <li><input type="checkbox" name="shpagat">Шпагат, шнуры, веревки</li>
+                                    <li><input type="checkbox" name="circle">Кольца, бусины</li>
+                                    <li><input type="checkbox" name="jut">Джут</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="title_p">Состав</p>
+                                <ul>
+                                    <li><input type="checkbox" name="cotton">Хлопок</li>
+                                    <li><input type="checkbox" name="synth">Синтетика</li>
+                                    <li><input type="checkbox" name="serdce">С сердечником</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="title_p">Диаметр</p>
+                                <ul>
+                                    <li><input type="checkbox" name="3">3 мм</li>
+                                    <li><input type="checkbox" name="4">4 мм</li>
+                                    <li><input type="checkbox" name="4.5">4,5 мм</li>
+                                    <li><input type="checkbox" name="5">5 мм</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="title_p">Производитель</p>
+                                <ul>
+                                    <li><input type="checkbox" name="macrametr">Macrametr</li>
+                                    <li><input type="checkbox" name="zefirka">Зефирка</li>
+                                    <li><input type="checkbox" name="gamma">Гамма</li>
+                                    <li><input type="checkbox" name="sibshnur">Сибшнур</li>
+                                </ul>
+                            </div>
+                            <div class="button_flex">
+                                <button class="submit" type="submit" form="catalogue">Показать</button>
+                                <button class="reset" type="reset" form="catalogue">Очистить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="cards">
+                        <div class="first">
+                            <div class="product_card">
+                                <img src="img/product_card/04.png" alt="product">
+                                <p class="text">Шпагат Macrametr 4 мм, 100 нитей</p>
+                                <p class="price">332 &#8381;</p>
+                                <button class="card_btn" type="submit">В корзину</button>
+                            </div>
+                            <div class="product_card">
+                                <img src="img/product_card/02.png" alt="product">
+                                <p class="text">Шпагат джутовый Сибшнур 500 м</p>
+                                <p class="price line">422 &#8381;</p>
+                                <button class="card_btn" type="submit">В корзину</button>
+                            </div>
+                            <div class="product_card">
+                                <img src="img/product_card/03.png" alt="product">
+                                <p class="text">Шпагат Macrametr 4 мм, 100 нитей</p>
+                                <p class="price">782 &#8381;</p>
+                                <button class="card_btn" type="submit">В корзину</button>
+                            </div>
+                            <div class="product_card">
+                                <img src="img/product_card/04.png" alt="product">
+                                <p class="text">Шпагат Macrametr 4 мм, 100 нитей</p>
+                                <p class="price">342 &#8381;</p>
+                                <button class="card_btn" type="submit">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="product_card">
+                                <img src="img/product_card/03.png" alt="product">
+                                <p class="text">Шпагат Macrametr 4 мм, 100 нитей</p>
+                                <p class="price">342 &#8381;</p>
+                                <button class="card_btn" type="submit">В корзину</button>
+                            </div>
+                            <div class="product_card">
+                                <img src="img/product_card/02.png" alt="product">
+                                <p class="text">Шпагат джутовый Сибшнур 500 м</p>
+                                <p class="price line"><span>424 &#8381;</span></p>
+                                <button class="card_btn" type="submit">В корзину</button>
+                            </div>
+                            <div class="product_card">
+                                <img src="img/product_card/04.png" alt="product">
+                                <p class="text">Шпагат Macrametr 4 мм, 100 нитей</p>
+                                <p class="price">432 &#8381;</p>
+                                <button class="card_btn" type="submit">В корзину</button>
+                            </div>
+                            <div class="product_card">
+                                <img src="img/product_card/03.png" alt="product">
+                                <p class="text">Шпагат Macrametr 4 мм, 100 нитей</p>
+                                <p class="price">334 &#8381;</p>
+                                <button class="card_btn" type="submit">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer_flex">
+                    <p class="footer_text">ХОББИ <br>АРТ</p>
+                    <div class="footer_contact">
+                        <img src="./img/footer/logo.png" alt="logo">
+                        <ul class="footer_list">
+                            <li class="footer_tel"><a href="tel:+79161234567">+7 916 123 45 67</a></li>
+                            <li class="footer_adress"><a href="https://yandex.ru/maps/-/CCUJZBB3GC" target="_blank">г.
+                                    Москва, Красная площадь, д. 3, ТЦ ГУМ</a></li>
+                            <li class="footer_time">Ежедневно с 10:00 до 19:00</li>
+                            <li class="footer_insta"><a href="https://instanavigation.com/ru/profile/hobbyart_dv"
+                                    target="_blank">@hobbyart_dv</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="catalogue.html">Каталог</a></li>
+                            <li><a href="index.html#new">Новинки</a></li>
+                            <li><a href="index.html#advantages">Преимущества</a></li>
+                            <li><a href="waranty.html">Гарантия и возврат</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="delivery.html">Оплата и доставка</a></li>
+                            <li><a href="company.html">Контакты</a></li>
+                            <li><a href="account.html">Личный кабинет</a></li>
+                            <li><a href="bonus.html">Бонусная программа</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_mailing">
+                        <p>Узнавайте первым о новинках и новостях</p>
+                        <form action="" method="get" id="mailing_more">
+                            <input type="email" name="email_mailing" form="mailing" placeholder="Ваш Email">
+                            <button class="footer_button" type="submit" form="mailing_more"
+                                value="aprove">подписаться</button>
+                            <p class="footer_mailing_attention">* нажимая на кнопку, вы соглашаетесь с политикой
+                                конфиденциальности</p>
+                            <p class="footer_mailing_copyright">© 2012-2022 ХОББИ АРТ — официальный интернет-магазин
+                                товаров для хобби. Все права защищены. Условия использования и политика
+                                конфиденциальности</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script/account_popup.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
