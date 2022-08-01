@@ -2382,7 +2382,7 @@ input[type="number"]::-webkit-inner-spin-button {
 		width: 230px;
 		height: 460px;
 		left: -80px;
-		top: 53%;
+		top: 25vh;
 	}
 
 	.overlay h2 {
@@ -2416,7 +2416,7 @@ input[type="number"]::-webkit-inner-spin-button {
 		width: 300px;
 		height: 570px;
 		left: 120px;
-		top: 68%;
+		top: 30vh;
 	}
 	
 	.reg_flex {
