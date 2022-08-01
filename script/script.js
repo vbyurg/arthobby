@@ -178,6 +178,23 @@ $(function() {
 // burger
 
 document.querySelector('.burger').addEventListener('click', function(active){
-    document.querySelector('.burger span').classList.toggle('active');
-    document.querySelector('.nav-menu').classList.toggle('animate');
-});
+
+    window.addEventListener('click', ({ target }) => {
+        const isClickedOnPopup = target.closest('.nav-menu') !== null || target.closest('.burger') !== null;
+    
+        if(!isClickedOnPopup)
+        {
+            const popup = document.querySelector('.nav-menu');
+            if(popup.classList.contains('animate'))
+            {
+                popup.classList.remove('animate');
+                document.querySelector('.burger span').classList.remove('active');
+            }   
+        }
+    });
+    
+    document.querySelector('.burger').addEventListener('click', function (active) {
+        document.querySelector('.burger span').classList.toggle('active');
+        document.querySelector('.nav-menu').classList.toggle('animate');
+    });
+}); 
