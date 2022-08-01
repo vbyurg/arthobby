@@ -413,7 +413,6 @@ input:hover {
 .acc_reg_link:hover {
 	border-color: #976464;
 	color: #976464;
-	;
 }
 
 /* registration poup */
@@ -2329,8 +2328,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 	.container {
 		max-width: 375px;
-		min-width: 375px;
 	}
+
+
 	/* Header */
 	header {
 		background-size: 100% 65px;
@@ -2370,6 +2370,73 @@ input[type="number"]::-webkit-inner-spin-button {
 		border: 1px solid #BDBDBD;
 		border-radius: 46px;
 	}
+
+	/* acc poup */
+	input {
+		padding: 5px 20px 5px 10px;
+		border: 1px solid #BDBDBD;
+		border-radius: 46px;
+	}
+
+	.popup {
+		width: 230px;
+		height: 460px;
+		left: -80px;
+		top: 53%;
+	}
+
+	.overlay h2 {
+		font-size: 20px;
+		line-height: 22px;
+		padding: 60px 20px 20px;
+	}
+
+	.overlay li {
+		margin-bottom: 20px;
+	}
+
+	.acc_button {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.overlay div p {
+		padding: 10px 0 10px;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	/* registration poup */
+	.overlay-reg h2 {
+		font-size: 20px;
+		line-height: 22px;
+	}
+
+	.popup-reg {
+		width: 300px;
+		height: 570px;
+		left: 120px;
+		top: 68%;
+	}
+	
+	.reg_flex {
+		flex-direction: column;
+	}
+
+	.reg_flex li {
+		margin: 15px auto 0;
+	}
+
+	.reg_flex .reg_list {
+		margin-top: 10px;
+	}
+
+	.reg_button {
+		padding: 10px 10px;
+		margin-top: 15px;
+		font-weight: 500;
+	}
+
 	/* nav menu */
 	.burger {
 		display: block;
@@ -2633,4 +2700,52 @@ input[type="number"]::-webkit-inner-spin-button {
 		text-align: center;
 		margin: 8px auto 0;
 	}
-}
+
+	/* Footer */
+	footer {
+		flex: 0 0 auto;
+		height: auto;
+		background: linear-gradient(267.48deg, #ECECD5 56.22%, #D7D7B9 130.03%);
+	}
+	.footer_contact,
+	.footer_menu,
+	.footer_mailing {
+		margin: 20px 0 32px;
+	}
+
+	.footer_text {
+		display: none;
+	}
+	
+	.footer_flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	.footer_contact {
+		width: auto;
+		height: auto;
+	}
+	
+	.footer_contact img {
+		display: block;
+		margin: 20px auto 32px;
+	}
+	
+	.footer_list li:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	
+	.footer_menu {
+		width: 210px;
+		height: 90px;
+		z-index: 100;
+		padding: 0;
+	}
+
+	
+	.footer_menu li:not(:last-child) {
+		margin-bottom: 10px;
+	}
+}	
