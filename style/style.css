@@ -186,14 +186,17 @@ header {
 
 .contact-tel::before {
 	content: url('../svg/header/01_phone.svg');
+	vertical-align: middle;
 }
 
 .contact-adress::before {
 	content: url('../svg/header/02_map.svg');
+	vertical-align: middle;
 }
 
 .contact-working_hours::before {
 	content: url('../svg/header/03_clock.svg');
+	vertical-align: middle;
 }
 
 .map p {
@@ -219,7 +222,11 @@ header {
 .map:hover .map_active {
 	display: block;
 	z-index: 3000;
+}
 
+.map_iframe {
+	width: 800px;
+	height: 260px;
 }
 
 /* MAIN */
@@ -1231,7 +1238,6 @@ footer a {
 	line-height: 27px;
 	color: #424242;
 	margin-bottom: 30px;
-
 }
 
 .card_info h2 {
@@ -1316,17 +1322,17 @@ input[type="number"]::-webkit-inner-spin-button {
 	line-height: 21px;
 	color: #BDBDBD;
 	top: 40px;
-	left: 185px;
+	left: 175px;
 }
 
 .btnPlus {
 	position: absolute;
-	font-weight: 400;
-	font-size: 26px;
+	font-weight: 300;
+	font-size: 24px;
 	line-height: 21px;
 	color: #BDBDBD;
-	top: 42px;
-	left: 250px;
+	top: 40px;
+	left: 235px;
 }
 
 
@@ -1675,7 +1681,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .user_list .user_birth {
 	width: 504px;
-	height: 45px;
+	height: 40px;
 	border: 1px solid #BDBDBD;
 	border-radius: 83px;
 }
@@ -1939,6 +1945,49 @@ input[type="number"]::-webkit-inner-spin-button {
 	.question .title {
 		margin-top: 32px;
 	}
+
+	/* ========ACCOUNT======== */
+	.user_list input {
+		width: 404px;
+		height: 40px;
+	}
+	
+	.user_list .user_birth {
+		width: 404px;
+		height: 40px;
+	}
+
+	/* ========CARD======== */
+	.card_info p br {
+		display: none;
+	}
+
+	.card_info p {
+		text-align: justify;
+	}
+
+	.btnMinus {
+		top: 40px;
+		left: 100px;
+	}
+	
+	.btnPlus {
+		top: 40px;
+		left: 160px;
+	}
+
+	/* ========CATALOGUE======== */
+	.catalogue_flex {
+		margin: 44px 0 100px;
+	}
+
+	.cards {
+		margin-left: 30px;
+	}
+	.product_card {
+		width: auto;
+	}
+
 }
 
 @media screen and (max-width: 1279px) {
@@ -2137,6 +2186,71 @@ input[type="number"]::-webkit-inner-spin-button {
 		height: 42px;
 		right: 10px;
 	}
+
+	/* =======================================
+	== BONUS / DELIVERY / WARANTY / COMPANY */
+	/* ==================================== */
+
+	.delivery {
+		height: 1100px;
+	}
+	
+	
+	.delivery_text_small {
+		width: auto;
+		margin-bottom: 15px;
+	}
+
+	.map_iframe {
+		width: 550px;
+		height: 260px;
+	}
+
+	/* ========ACCOUNT======== */
+	.user_list input {
+		width: 270px;
+		height: 40px;
+	}
+	
+	.user_list .user_birth {
+		width: 270px;
+		height: 40px;
+	}
+
+	/* ========CARD======== */
+	.card_image img {
+		height: 100%;
+		width: 500px;
+	}
+
+	/* ========CATALOGUE======== */
+	.catalogue_flex {
+		margin: 44px 0 100px;
+	}
+
+	.cards {
+		margin-left: 15px;
+	}
+	.product_card {
+		height: 320px;
+		width: 180px;
+	}
+
+	.product_card img {
+		width: 110px;
+		height: 110px;
+		padding: 10px 0;
+	}
+
+	.product_card p {
+		font-size: 15px;
+		padding: 10px 50px 10px 30px;
+	}
+
+	.card_btn {
+		width: 140px;
+		margin: 10px 20px 10px 20px;
+	}
 }
 
 @media screen and (max-width: 1023px) {
@@ -2265,7 +2379,6 @@ input[type="number"]::-webkit-inner-spin-button {
 	}
 
 	/* catalogue */
-
 	.catalogue_container {
 		grid-template-rows: repeat(2, 230px);
 		gap: 20px;
@@ -2305,7 +2418,6 @@ input[type="number"]::-webkit-inner-spin-button {
 	}
 
 	/* footer */
-
 	.footer_text {
 		right: 600px;
 	}
@@ -2321,6 +2433,124 @@ input[type="number"]::-webkit-inner-spin-button {
 	.footer_mailing {
 		display: none;
 	}
+
+	/* =======================================
+	== BONUS / DELIVERY / WARANTY / COMPANY */
+	/* ==================================== */
+
+	.delivery {
+		height: auto;
+	}
+	.container_flex {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 32px;
+	}
+	
+	.aside_catalogue {
+		margin: 0 auto;
+	}
+	
+	
+	.aside_text {
+		margin: 32px 0 32px;
+		text-align: center;
+	}
+
+	.delivery_text_big {
+		text-align: center;
+		margin: 32px 0 32px;
+	}
+	
+	.dtb {
+		margin-top: 32px;
+	}
+	
+	.delivery_text_small {
+		width: auto;
+	}
+
+	.map_iframe {
+		width: 740px;
+		height: 260px;
+	}
+
+	/* ========ACCOUNT======== */
+	.user_list input {
+		width: 200px;
+		height: 30px;
+	}
+	
+	.user_list .user_birth {
+		width: 200px;
+		height: 30px;
+	}
+
+	.spoiler-content button {
+		width: 118px;
+	}
+
+	.save_button {
+		width: 118px;
+	}
+
+	/* ========CARD======== */
+	.catalogue_grid {
+		display: grid;
+		grid-template-areas:
+			"a b"
+			"c d";
+		gap: 10px;
+	}
+
+	.button_flex {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.card {
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto 32px;
+	}
+
+	.card_info {
+		margin-top: 0;
+	}
+
+	.card_info h2 {
+	text-align: center;
+	display: block;
+	}
+
+	table {
+		margin: 0 auto;
+	}
+
+	.card_form {
+		justify-content:space-evenly;
+	}
+
+	.btnMinus {
+		top: 40px;
+		left: 220px;
+	}
+	
+	.btnPlus {
+		top: 40px;
+		left: 270px;
+	}
+
+	/* ========CATALOGUE======== */
+	.catalogue_flex {
+		margin: 44px 0 100px;
+		flex-direction: column;
+	}
+
+	.cards {
+		margin-left: 15px;
+	}
+
 
 }
 
@@ -2748,4 +2978,96 @@ input[type="number"]::-webkit-inner-spin-button {
 	.footer_menu li:not(:last-child) {
 		margin-bottom: 10px;
 	}
-}	
+
+	/* =======================================
+	== BONUS / DELIVERY / WARANTY / COMPANY */
+	/* ==================================== */
+	.aside_block {
+		width: auto;
+	}
+
+	.delivery_text_big {
+		margin: 18px 0 24px;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.delivery_text_small {
+		text-align: justify;
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 20px;
+	}
+
+	.map_iframe {
+		width: 360px;
+		height: 260px;
+	}
+
+		/* ========ACCOUNT======== */
+		.user_flex {
+			margin-top: 20px;
+			flex-direction: column;
+		}
+
+		.content h2 {
+			text-align: center;
+			margin: 32px 0 32px;
+		}
+
+		.user_list li {
+			text-align: center;
+			margin: 15px auto;
+		}
+
+		.user_email {
+			margin: 0 0 0 35px;
+		}
+
+		.spoiler-content button {
+		width: 220px;
+		margin: 0 auto;
+		text-align: center;
+		}
+
+		.save_button {
+		margin: 0 auto;
+		text-align: center;
+		}
+		
+		.spoiler-content button {
+			width: 200px;
+			margin: 20px auto;
+			text-align: center;
+		}
+
+		.footer_mailing_attention {
+			padding: 0;
+		}
+
+	/* ========CARD======== */
+	.card {
+		width: 345px;
+	}
+
+	.card_image img {
+		height: 100%;
+		width: 300px;
+	}
+
+	.card_form {
+		flex-wrap: wrap;
+	}
+
+	.btnMinus {
+		top: 40px;
+		left: 210px;
+	}
+	
+	.btnPlus {
+		top: 40px;
+		left: 245px;
+	}
+
+	
+}
