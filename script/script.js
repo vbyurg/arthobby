@@ -177,11 +177,11 @@ $(function() {
 
 // burger
 
-document.querySelector('.burger').addEventListener('click', function(active){
+
 
     window.addEventListener('click', ({ target }) => {
         const isClickedOnPopup = target.closest('.nav-menu') !== null || target.closest('.burger') !== null;
-    
+        
         if(!isClickedOnPopup)
         {
             const popup = document.querySelector('.nav-menu');
@@ -197,4 +197,4 @@ document.querySelector('.burger').addEventListener('click', function(active){
         document.querySelector('.burger span').classList.toggle('active');
         document.querySelector('.nav-menu').classList.toggle('animate');
     });
-}); 
+

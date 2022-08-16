@@ -171,19 +171,20 @@
 
                     <div class="basket_form">
                         <h2>Способ получения</h2>
-                        <p><input class="user_city" type="text" form="basket_form" name="user_city" placeholder="Город"
-                                required></p>
+                        <div><input class="user_city" type="text" form="basket_form" name="user_city" placeholder="Город"
+                                required></div>
                         <form>
                             <ul class="send_choose">
                                 <li> <input type="radio" form="basket_form" name="send" value="pochta" id="pochta"
-                                        checked> </li>
-                                <label for="pochta">Почта России</label>
-                                <li> <input type="radio" form="basket_form" name="send" value="sdek" id="sdek"> </li>
-                                <label for="sdek">СДЭК</label>
-                                <li> <input type="radio" form="basket_form" name="send" value="dhl" id="dhl"> </li>
-                                <label for="dhl">DHL</label>
-                                <li> <input type="radio" form="basket_form" name="send" value="ems" id="ems"> </li>
-                                <label for="ems">EMS</label>
+                                        checked> 
+                                        <label for="pochta">Почта России</label></li>
+                                
+                                <li> <input type="radio" form="basket_form" name="send" value="sdek" id="sdek"> <label for="sdek">СДЭК</label></li>
+                                
+                                <li> <input type="radio" form="basket_form" name="send" value="dhl" id="dhl"> <label for="dhl">DHL</label></li>
+                                
+                                <li> <input type="radio" form="basket_form" name="send" value="ems" id="ems"><label for="ems">EMS</label></li>
+                                
                             </ul>
                             <ul class="basket_list">
                                 <li><input class="user_street" type="text" form="basket_form" name="user_street"
@@ -193,10 +194,10 @@
                                 <li> <input class="user_flat" type="text" form="basket_form" name="user_flat"
                                         placeholder="Квартира"></li>
                             </ul>
-                            <p><textarea name="comments" id="" placeholder="Добавить комментарий"
-                                    form="basket_form"></textarea></p>
-                            <p><input class="user_date" type="text" value="" id="datetimepicker" name="datetimepicker"
-                                    placeholder="Выберите дату и время" form="basket_form"></p>
+                            <div><textarea name="comments" id="" placeholder="Добавить комментарий"
+                                    form="basket_form"></textarea></div>
+                            <div><input class="user_date" type="text" value="" id="datetimepicker" name="datetimepicker"
+                                    placeholder="Выберите дату и время" form="basket_form"></div>
 
                             <h2>Данные получателя</h2>
 
@@ -208,7 +209,7 @@
                                 <li> <input class="user_fathername" type="text" form="basket_form"
                                         name="user_fathername" placeholder="Отчество"></li>
                             </ul>
-                            <input class="phone baske_phone" type="text" id="phone" name="phone_number"
+                            <input class="phone basket_phone" type="text" id="phone" name="phone_number"
                                 form="basket_form" placeholder="Номер телефона" required>
                             <p class="basket_text">по этому номеру телефона мы с вяжемся с вами для подтверждения заказа
                             </p>
